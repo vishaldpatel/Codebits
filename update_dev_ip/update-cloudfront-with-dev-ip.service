@@ -1,0 +1,6 @@
+[Unit]
+Description=My Update the DNS entry for dev.vishal.rs on Cloudfront with the current server's public IP address.
+
+[Service]
+Type=oneshot
+ExecStart=./update_dev_ip.sh
