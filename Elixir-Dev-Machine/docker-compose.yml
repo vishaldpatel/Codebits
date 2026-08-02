@@ -1,0 +1,20 @@
+services:
+  dev:
+    build:
+      context: .
+      ssh: ["default"]
+      dockerfile: Dockerfile.container-dev
+    volumes:
+      - type: volume
+        source: app_code
+        target: /app/repos
+      - type: bind
+        source: ~/.ssh
+        target: /root/.ssh/
+    environment:
+      - MIX_ENV=dev
+      - SECRET_KEY_BASE=JUST_A_LOCAL_MACHINE_SECRET_KEY_BASE
+
+volumes:
+  app_code:
+  sqlite_data:
