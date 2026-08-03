@@ -13,6 +13,8 @@ docker compose build --build-arg REPO=git@github.com:username/repo.git
 
 Or to create a container without a preset repo:
 ```
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
 docker compose build --build-arg REPO=git 
 ```
 
