@@ -3,11 +3,6 @@ FROM elixir:1.16-alpine
 # Install git, build tools, sqlite, nodejs, and npm
 RUN apk add --no-cache build-base neovim tmux openssh-client bash git sqlite nodejs npm
 
-# Set build ENV
-ENV PORT=4000
-ENV MIX_ENV=dev
-EXPOSE 4000
-
 # Install Hex and Rebar
 RUN mix local.hex --force && \
     mix local.rebar --force
