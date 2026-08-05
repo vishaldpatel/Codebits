@@ -1,3 +1,6 @@
+# LinkedIn Denoiser
+It removes promoted, subbgested, liked, supported, funny, etc.. elements and leaves behind posts, re-posts and comments by people you follow.
+
 # HNTools
 UserScripts to make Hacker News more useful.
 
