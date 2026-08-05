@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  This script removes promoted, suggested, and social media slop to leave behind posts, reposts, and comments by connections.
 // @match        https://www.linkedin.com/feed/*
-// @run-at       document-end
+// @run-at       document-body
 // ==/UserScript==
 
 (function() {
