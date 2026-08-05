@@ -1,7 +1,7 @@
 FROM elixir:1.16-alpine
 
 # Install git, build tools, sqlite, nodejs, and npm
-RUN apk add --no-cache build-base neovim tmux openssh-client bash git sqlite nodejs npm
+RUN apk add --no-cache build-base neovim tmux openssh-client bash git sqlite nodejs npm inotify-tools
 
 # Install Hex and Rebar
 RUN mix local.hex --force && \
