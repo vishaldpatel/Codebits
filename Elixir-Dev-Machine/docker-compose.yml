@@ -5,8 +5,8 @@ services:
       ssh: ["default"]
       dockerfile: Dockerfile.container-dev
     ports: 
-      - "80:4000"
-      - "0.0.0.0:80:4000"
+      - "4000:4000"
+      - "0.0.0.0:4000:4000"
     volumes:
       - type: volume
         source: app_code
