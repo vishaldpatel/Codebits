@@ -4,9 +4,7 @@ services:
       context: .
       ssh: ["default"]
       dockerfile: Dockerfile.container-dev
-    ports: 
-      - "4000:4000"
-      - "0.0.0.0:4000:4000"
+    network_mode: host
     volumes:
       - type: volume
         source: app_code
@@ -21,3 +19,4 @@ services:
 volumes:
   app_code:
   sqlite_data:
+
